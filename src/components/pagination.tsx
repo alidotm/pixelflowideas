@@ -24,15 +24,16 @@ const Pagination: FC<Props> = ({ totalPhotos }) => {
         breakLabel="..."
         nextLabel=">"
         onPageChange={handlePageClick}
-        pageRangeDisplayed={1}
+        pageRangeDisplayed={2}
+        marginPagesDisplayed={1}
         pageCount={pageCount}
         previousLabel="<"
         renderOnZeroPageCount={() => {
           return;
         }}
         nextClassName="block h-9 w-9 text-sm flex justify-center items-center rounded-md border border-zinc-200 text-center "
-        previousClassName="block h- w-9 text-sm flex justify-center items-center rounded-md border border-zinc-200 text-center "
-        className="flex max-w-sm flex-grow justify-between"
+        previousClassName="block h-9 w-9 text-sm flex justify-center items-center rounded-md border border-zinc-200 text-center "
+        className="flex max-w-sm flex-grow justify-between space-x-1"
         activeLinkClassName="bg-black text-white font-medium"
         forcePage={
           parseInt(router.query.page as string) > 0
