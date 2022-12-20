@@ -1,6 +1,7 @@
 import { type NextPage } from "next";
 import Head from "next/head";
 import Landing from "../components/Landing";
+import Results from "../components/results/photos";
 import Search from "../components/Search";
 
 // import { trpc } from "../utils/trpc";
@@ -24,6 +25,7 @@ const Home: NextPage = () => {
       <main className="mx-auto flex w-full max-w-screen-xl flex-col items-center px-6 pt-20">
         <Landing />
         <Search />
+        <Results />
       </main>
     </>
   );

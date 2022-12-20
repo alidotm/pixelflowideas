@@ -10,14 +10,21 @@ const Landing: FC = () => {
       <p className="mt-2 text-zinc-500">
         Search all stock assets like photos, videos, animation and etc in one
         place from famous sites like{" "}
-        <a href="https://www.pexels.com/" className="font-medium text-zinc-600">
+        <a
+          href="https://www.pexels.com/"
+          target="_blank"
+          className="font-medium text-zinc-600"
+          rel="noreferrer"
+        >
           Pexels,{" "}
         </a>
-        <a href="https://unsplash.com/" className="font-medium text-zinc-600">
+        <a
+          href="https://unsplash.com/"
+          target="_blank"
+          className="font-medium text-zinc-600"
+          rel="noreferrer"
+        >
           Unsplash,{" "}
-        </a>{" "}
-        <a href="https://jitter.video/" className="font-medium text-zinc-600">
-          Jitter
         </a>{" "}
         and etc what full list of{" "}
         <Link href="" className="font-medium text-zinc-600">

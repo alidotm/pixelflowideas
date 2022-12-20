@@ -1,8 +1,25 @@
-import { type FC } from "react";
+import { useRouter } from "next/router";
+import { type FormEvent, type FC, useState } from "react";
 
 const Search: FC = () => {
+  //router
+  const router = useRouter();
+
+  //input state
+  const [search, setSearch] = useState<string>("");
+
+  //onSubmit form
+  const onSubmit = async (e: FormEvent) => {
+    e.preventDefault();
+    router.push({
+      query: {
+        search,
+      },
+    });
+  };
+
   return (
-    <div className="mx-auto w-full max-w-lg">
+    <form onSubmit={onSubmit} className="mx-auto w-full max-w-lg">
       <div className="relative flex h-12 w-full items-center overflow-hidden rounded-lg border border-zinc-600/70 bg-white px-2 focus-within:shadow-lg">
         <div className="grid h-full w-10 place-items-center text-zinc-400">
           <svg
@@ -25,10 +42,12 @@ const Search: FC = () => {
           className="peer h-full w-full pr-2 text-base text-zinc-700 outline-none placeholder:text-zinc-400"
           type="text"
           id="search"
+          value={search}
+          onChange={(e) => setSearch(e.target.value)}
           placeholder="Search something.."
         />
       </div>
-    </div>
+    </form>
   );
 };
 
