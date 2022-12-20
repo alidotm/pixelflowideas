@@ -7,7 +7,7 @@ const Navbar: FC = () => {
   return (
     <header
       aria-label="Site header"
-      className="sticky top-0 flex h-16 w-screen items-center justify-center border-b bg-white"
+      className="sticky top-0 z-50 flex h-16 w-screen items-center justify-center border-b bg-white"
     >
       <div className="flex w-full max-w-screen-xl justify-between px-6">
         <div aria-label="Site Logo">

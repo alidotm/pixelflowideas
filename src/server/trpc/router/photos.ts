@@ -18,8 +18,9 @@ export const photoRouter = router({
           await pexels.photos.search({
             query: input.search,
             page: input.page,
-            per_page: 50,
+            per_page: 20,
           });
+
         return pexelsPhotos as PhotosWithTotalResults;
       } catch (error) {
         throw new TRPCError({

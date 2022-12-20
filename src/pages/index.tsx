@@ -22,7 +22,7 @@ const Home: NextPage = () => {
           href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚀</text></svg>"
         />
       </Head>
-      <main className="mx-auto flex w-full max-w-screen-xl flex-col items-center px-6 pt-20">
+      <main className="mx-auto flex w-screen max-w-screen-xl flex-col items-center px-6 pt-20">
         <Landing />
         <Search />
         <Results />
