@@ -31,8 +31,8 @@ const Pagination: FC<Props> = ({ totalPhotos }) => {
         renderOnZeroPageCount={() => {
           return;
         }}
-        nextClassName="block h-9 w-9 text-sm flex justify-center items-center rounded-md border border-zinc-200 text-center "
-        previousClassName="block h-9 w-9 text-sm flex justify-center items-center rounded-md border border-zinc-200 text-center "
+        nextLinkClassName="block h-9 w-9 cursor-pointer hover:bg-zinc-100 text-sm flex justify-center items-center rounded-md border border-zinc-200 text-center "
+        previousLinkClassName="block h-9 w-9 cursor-pointer hover:bg-zinc-100 text-sm flex justify-center items-center rounded-md border border-zinc-200 text-center "
         className="flex max-w-sm flex-grow justify-between space-x-1"
         activeLinkClassName="bg-black text-white font-medium"
         forcePage={
