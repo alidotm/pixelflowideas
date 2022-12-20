@@ -14,6 +14,7 @@ const Search: FC = () => {
     router.push({
       query: {
         search,
+        page: 1,
       },
     });
   };

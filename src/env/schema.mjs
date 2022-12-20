@@ -31,6 +31,7 @@ export const serverSchema = z.object({
 export const clientSchema = z.object({
   // NEXT_PUBLIC_CLIENTVAR: z.string(),
   NEXT_PUBLIC_PEXELS_API_KEY: z.string(),
+  NEXT_PUBLIC_UNSPLASH_ACCESSKEY: z.string(),
 });
 
 /**
@@ -41,4 +42,5 @@ export const clientSchema = z.object({
  */
 export const clientEnv = {
   NEXT_PUBLIC_PEXELS_API_KEY: process.env.NEXT_PUBLIC_PEXELS_API_KEY,
+  NEXT_PUBLIC_UNSPLASH_ACCESSKEY: process.env.NEXT_PUBLIC_UNSPLASH_ACCESSKEY,
 };
