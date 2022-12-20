@@ -26,7 +26,7 @@ const Landing: FC = () => {
         >
           Unsplash,{" "}
         </a>{" "}
-        and etc what full list of{" "}
+        and etc see full list {" "}
         <Link href="" className="font-medium text-zinc-600">
           here
         </Link>
